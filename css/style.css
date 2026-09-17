@@ -29,10 +29,9 @@
 }
 
 .page-header{
-    background-image: url(../assets/image/main-bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 90px;
+    position: absolute;
+    width: 100%;
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
 .header-color{
@@ -85,16 +84,18 @@
 }
 
 .plan-trip-section{
+    padding-top: 120px;
     height: 765px;
-    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(../assets/image/main-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .explore-title{
     font-family: 'Aleo';
     font-size: 80px;
-    color: #0D606F;
+    color: #fff;
     text-align: center;
 }
