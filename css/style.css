@@ -93,9 +93,35 @@
     background-size: cover;
 }
 
+.plan-trip-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 46px;
+    padding-top: 100px;
+}
+
 .explore-title{
     font-family: 'Aleo';
     font-size: 80px;
     color: #fff;
     text-align: center;
+}
+
+.explore-description{
+    font-family: 'Aleo';
+    font-style: italic;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.explore-search{
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    height: 95px;
+    width: 892px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
 }
