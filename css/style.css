@@ -1,5 +1,6 @@
 :root{
     --btn-color: #0D606F;
+    --font-orange: #F2785C;
 }
 
 *{
@@ -19,7 +20,7 @@
 
 @font-face {
     font-family: 'Aleo';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Aleo/Aleo-Bold.ttf);
+    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Aleo/Aleo-Regular.ttf);
 }
 
 .wrapper{
@@ -124,4 +125,17 @@
     width: 892px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
+
+    ::placeholder {
+        color: var(--font-orange);
+    }
+
+    input{
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        font-family: 'Aleo';
+        font-style: italic;
+        font-size: 24px;
+    }
 }
