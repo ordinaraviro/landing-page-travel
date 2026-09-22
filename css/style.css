@@ -131,11 +131,23 @@
     }
 
     input{
-        width: 100%;
+        min-width: 70%;
         border: none;
         background-color: transparent;
         font-family: 'Aleo';
         font-style: italic;
         font-size: 24px;
+    }
+
+    button{
+        border: none;
+        background-color: var(--btn-color);
+        color: #fff;
+        font-family: 'Red Hat Text';
+        font-size: 24px;
+        width: 228px;
+        height: 59px;
+        border-radius: 10px;
+        cursor: pointer;
     }
 }
