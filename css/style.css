@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'Red Hat Text';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Red_Hat_Text/static/RedHatText-Medium.ttf);
+    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Red_Hat_Text/static/RedHatText-Regular.ttf);
 }
 
 @font-face {
@@ -150,4 +150,10 @@
         border-radius: 10px;
         cursor: pointer;
     }
+}
+
+.steps-header{
+    font-family: 'Red Hat Text';
+    font-size: 40px;
+    color: var(--font-orange);
 }
