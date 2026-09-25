@@ -1,5 +1,6 @@
 :root{
     --btn-color: #0D606F;
+    --font-orange: #F2785C;
 }
 
 *{
@@ -14,12 +15,12 @@
 
 @font-face {
     font-family: 'Red Hat Text';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Red_Hat_Text/static/RedHatText-Medium.ttf);
+    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Red_Hat_Text/static/RedHatText-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Aleo';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Aleo/Aleo-Bold.ttf);
+    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Aleo/Aleo-Regular.ttf);
 }
 
 .wrapper{
@@ -124,4 +125,61 @@
     width: 892px;
     background-color: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
+
+    ::placeholder {
+        color: var(--font-orange);
+    }
+
+    input{
+        min-width: 70%;
+        border: none;
+        background-color: transparent;
+        font-family: 'Aleo';
+        font-style: italic;
+        font-size: 24px;
+    }
+
+    button{
+        border: none;
+        background-color: var(--btn-color);
+        color: #fff;
+        font-family: 'Red Hat Text';
+        font-size: 24px;
+        width: 228px;
+        height: 59px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+.steps-section{
+    padding: 97px 0;
+}
+
+.steps-section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.steps-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.steps-icon{
+    background-color: var(--font-orange);
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.steps-header{
+    font-family: 'Red Hat Text';
+    font-size: 40px;
+    color: var(--font-orange);
 }
