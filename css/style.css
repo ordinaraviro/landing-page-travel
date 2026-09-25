@@ -152,6 +152,32 @@
     }
 }
 
+.steps-section{
+    padding: 97px 0;
+}
+
+.steps-section-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.steps-items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.steps-icon{
+    background-color: var(--font-orange);
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    padding: 25px;
+}
+
 .steps-header{
     font-family: 'Red Hat Text';
     font-size: 40px;
