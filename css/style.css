@@ -170,6 +170,14 @@
     gap: 60px;
 }
 
+.steps-item{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    width: 320px;
+}
+
 .steps-icon{
     background-color: var(--font-orange);
     width: 100px;
@@ -182,4 +190,10 @@
     font-family: 'Red Hat Text';
     font-size: 40px;
     color: var(--font-orange);
+}
+
+.steps-description{
+    font-family: 'Aleo';
+    font-size: 20px;
+    color: var(--btn-color);
 }
