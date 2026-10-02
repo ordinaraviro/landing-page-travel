@@ -273,3 +273,20 @@ h2{
 #radio3:checked ~ .btn .btn3 {
     opacity: 1;
 }
+
+.scroller-btn{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: none;
+    color: #fff;
+    font-family: 'Red Hat Text';
+    font-size: 24px;
+    width: 228px;
+    height: 59px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: var(--btn-color);
+}
