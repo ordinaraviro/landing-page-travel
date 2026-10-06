@@ -290,3 +290,9 @@ h2{
     cursor: pointer;
     background-color: var(--btn-color);
 }
+
+.stories-container{
+    background-image: url(../assets/image/stories-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
