@@ -350,3 +350,15 @@ h3{
     color: var(--btn-color);
     font-weight: bold;
 }
+
+.page-footer{
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    justify-content: flex-end;
+}
+
+.footer-nav-list{
+    display: flex;
+    flex-direction: row;
+}
