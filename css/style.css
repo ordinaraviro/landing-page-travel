@@ -210,6 +210,7 @@ h2{
     display: flex;
     flex-direction: row;
     gap: 60px;
+    transition: transform 400ms;
 }
 
 .scroller-img{
@@ -262,16 +263,24 @@ h2{
     opacity: 1;
 }
 
-#radio1:checked ~ .btn .btn1 {
+#radio1:checked ~ .scroller-inputs .btn .btn1 {
     opacity: 1;
 }
 
-#radio2:checked ~ .btn .btn2 {
+#radio1:checked ~ .scroller-items {
+    transform: translateX(33.33%);
+}
+
+#radio2:checked ~ .scroller-inputs .btn .btn2 {
     opacity: 1;
 }
 
-#radio3:checked ~ .btn .btn3 {
+#radio3:checked ~ .scroller-inputs .btn .btn3 {
     opacity: 1;
+}
+
+#radio3:checked ~ .scroller-items {
+    transform: translateX(-33.33%);
 }
 
 .scroller-btn, .stories-btn{
