@@ -1,6 +1,8 @@
 :root{
-    --btn-color: #0D606F;
-    --font-orange: #F2785C;
+    --color-primary: #0D606F;
+    --color-secondary: #F2785C;
+
+    --text-light: #FFFFFF;
 }
 
 *{
@@ -10,23 +12,23 @@
 
 @font-face{
     font-family: 'Magra';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Magra/Magra-Bold.ttf);
+    src: url(../assets/fonts/Magra/Magra-Bold.ttf);
 }
 
 @font-face {
     font-family: 'Red Hat Text';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Red_Hat_Text/static/RedHatText-Regular.ttf);
+    src: url(../assets/fonts/Red-Hat-Text/static/RedHatText-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Aleo';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Aleo/Aleo-Regular.ttf);
+    src: url(../assets/fonts/Aleo/Aleo-Regular.ttf);
 }
 
 h2{
     font-family: 'Red Hat Text';
     font-size: 40px;
-    color: var(--font-orange);
+    color: var(--color-secondary);
 }
 
 .wrapper{
@@ -62,7 +64,7 @@ h2{
 .header-logo-text{
     font-family: 'Magra';
     font-size: 32px;
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 .header-nav-list{
@@ -75,17 +77,17 @@ h2{
 .nav-item-anchor{
     text-decoration: none;
     font-family: 'Red Hat Text';
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 .header-login-btn{
-    border: var(--btn-color);
+    border: var(--color-primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
     width: 103px;
     height: 41px;
-    background-color: var(--btn-color);
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--text-light);
     font-family: 'Red Hat Text';
     cursor: pointer;
 }
@@ -111,7 +113,7 @@ h2{
 .explore-title{
     font-family: 'Aleo';
     font-size: 80px;
-    color: #fff;
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -119,7 +121,7 @@ h2{
     font-family: 'Aleo';
     font-style: italic;
     font-size: 20px;
-    color: #fff;
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -133,7 +135,7 @@ h2{
     border-radius: 16px;
 
     ::placeholder {
-        color: var(--font-orange);
+        color: var(--color-secondary);
     }
 
     input{
@@ -147,8 +149,8 @@ h2{
 
     button{
         border: none;
-        background-color: var(--btn-color);
-        color: #fff;
+        background-color: var(--color-primary);
+        color: var(--text-light);
         font-family: 'Red Hat Text';
         font-size: 24px;
         width: 228px;
@@ -185,7 +187,7 @@ h2{
 }
 
 .steps-icon{
-    background-color: var(--font-orange);
+    background-color: var(--color-secondary);
     width: 100px;
     height: 100px;
     border-radius: 16px;
@@ -195,7 +197,7 @@ h2{
 .steps-description{
     font-family: 'Aleo';
     font-size: 20px;
-    color: var(--btn-color);
+    color: var(--color-primary);
 }
 
 .scroller-section{
@@ -221,7 +223,7 @@ h2{
     border-radius: 16px;
     font-family: 'Red Hat Text';
     font-size: 40px;
-    color: #fff;
+    color: var(--text-light);
 }
 
 .scroller-img-1 {
@@ -253,7 +255,7 @@ h2{
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    background-color: var(--font-orange);
+    background-color: var(--color-secondary);
     transition: 400ms;
     cursor: pointer;
     opacity: 0.5;
@@ -290,14 +292,14 @@ h2{
     justify-content: center;
     gap: 10px;
     border: none;
-    color: #fff;
+    color: var(--text-light);
     font-family: 'Red Hat Text';
     font-size: 24px;
     width: 228px;
     height: 59px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: var(--btn-color);
+    background-color: var(--color-primary);
 }
 
 .stories-section{
@@ -313,7 +315,7 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    color: var(--btn-color);
+    color: var(--color-primary);
 }
 
 .stories-content{
@@ -356,14 +358,14 @@ h3{
 
 .stories-link{
     display: block;
-    color: var(--btn-color);
+    color: var(--color-primary);
     font-weight: bold;
 }
 
 .page-footer{
     display: flex;
     flex-direction: row;
-    color: #fff;
+    color: var(--text-light);
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
