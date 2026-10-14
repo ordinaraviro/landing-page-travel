@@ -90,6 +90,7 @@ h2{
     color: var(--text-light);
     font-family: 'Red Hat Text';
     cursor: pointer;
+    user-select: none;
 }
 
 .plan-trip-section{
@@ -157,6 +158,7 @@ h2{
         height: 59px;
         border-radius: 10px;
         cursor: pointer;
+        user-select: none;
     }
 }
 
@@ -259,6 +261,7 @@ h2{
     transition: 400ms;
     cursor: pointer;
     opacity: 0.5;
+    user-select: none;
 }
 
 .btn:hover .radio-btn {
@@ -300,6 +303,7 @@ h2{
     border-radius: 10px;
     cursor: pointer;
     background-color: var(--color-primary);
+    user-select: none;
 }
 
 .stories-section{
