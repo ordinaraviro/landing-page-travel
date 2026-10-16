@@ -185,6 +185,11 @@ h2{
         border-radius: 10px;
         cursor: pointer;
         user-select: none;
+        transition: 300ms;
+    }
+
+    button:hover{
+        background-color: var(--color-accent);
     }
 }
 
@@ -330,6 +335,11 @@ h2{
     cursor: pointer;
     background-color: var(--color-primary);
     user-select: none;
+    transition: 300ms;
+}
+
+.scroller-btn:hover, .stories-btn:hover{
+    background-color: var(--color-accent);
 }
 
 .stories-section{
@@ -411,6 +421,18 @@ h3{
 
 .footer-first-item{
     width: 176px;
+}
+
+.footer-icon, .footer-youtube-icon path{
+    transition: 300ms
+}
+
+.footer-icon:hover{
+    fill: var(--color-secondary);
+}
+
+.footer-youtube-icon:hover path{
+    stroke: var(--color-secondary);
 }
 
 .footer-text{
