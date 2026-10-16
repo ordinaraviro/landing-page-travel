@@ -1,6 +1,9 @@
 :root{
-    --btn-color: #0D606F;
-    --font-orange: #F2785C;
+    --color-primary: #0D606F;
+    --color-secondary: #F2785C;
+    --color-accent: #00869e;
+
+    --text-light: #FFFFFF;
 }
 
 *{
@@ -10,27 +13,27 @@
 
 @font-face{
     font-family: 'Magra';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Magra/Magra-Bold.ttf);
+    src: url(../assets/fonts/Magra/Magra-Bold.ttf);
 }
 
 @font-face {
     font-family: 'Red Hat Text';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Red_Hat_Text/static/RedHatText-Regular.ttf);
+    src: url(../assets/fonts/Red-Hat-Text/static/RedHatText-Regular.ttf);
 }
 
 @font-face {
     font-family: 'Aleo';
-    src: url(../assets/fonts/Aleo\,Magra\,Red_Hat_Text/Aleo/Aleo-Regular.ttf);
+    src: url(../assets/fonts/Aleo/Aleo-Regular.ttf);
 }
 
 h2{
     font-family: 'Red Hat Text';
     font-size: 40px;
-    color: var(--font-orange);
+    color: var(--color-secondary);
 }
 
 .wrapper{
-    max-width: 1440px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -62,7 +65,7 @@ h2{
 .header-logo-text{
     font-family: 'Magra';
     font-size: 32px;
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 .header-nav-list{
@@ -72,22 +75,48 @@ h2{
     gap: 42px;
 }
 
+.header-nav-list-item {
+    position: relative;
+
+    ::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background: var(--text-light);
+        transition: width 300ms;
+    }
+
+    :hover::after {
+        width: 100%;
+    }
+}
+
 .nav-item-anchor{
     text-decoration: none;
     font-family: 'Red Hat Text';
-    color: #ffffff;
+    color: var(--text-light);
 }
 
 .header-login-btn{
-    border: var(--btn-color);
+    border: var(--color-primary);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
     width: 103px;
     height: 41px;
-    background-color: var(--btn-color);
-    color: #ffffff;
+    background-color: var(--color-primary);
+    color: var(--text-light);
     font-family: 'Red Hat Text';
+    font-weight: 600;
     cursor: pointer;
+    user-select: none;
+    transition: 300ms;
+}
+
+.header-login-btn:hover{
+    background-color: var(--color-accent);
 }
 
 .plan-trip-section{
@@ -111,7 +140,7 @@ h2{
 .explore-title{
     font-family: 'Aleo';
     font-size: 80px;
-    color: #fff;
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -119,7 +148,7 @@ h2{
     font-family: 'Aleo';
     font-style: italic;
     font-size: 20px;
-    color: #fff;
+    color: var(--text-light);
     text-align: center;
 }
 
@@ -133,7 +162,7 @@ h2{
     border-radius: 16px;
 
     ::placeholder {
-        color: var(--font-orange);
+        color: var(--color-secondary);
     }
 
     input{
@@ -147,14 +176,20 @@ h2{
 
     button{
         border: none;
-        background-color: var(--btn-color);
-        color: #fff;
+        background-color: var(--color-primary);
+        color: var(--text-light);
         font-family: 'Red Hat Text';
         font-size: 24px;
         width: 228px;
         height: 59px;
         border-radius: 10px;
         cursor: pointer;
+        user-select: none;
+        transition: 300ms;
+    }
+
+    button:hover{
+        background-color: var(--color-accent);
     }
 }
 
@@ -185,7 +220,7 @@ h2{
 }
 
 .steps-icon{
-    background-color: var(--font-orange);
+    background-color: var(--color-secondary);
     width: 100px;
     height: 100px;
     border-radius: 16px;
@@ -195,7 +230,7 @@ h2{
 .steps-description{
     font-family: 'Aleo';
     font-size: 20px;
-    color: var(--btn-color);
+    color: var(--color-primary);
 }
 
 .scroller-section{
@@ -210,6 +245,7 @@ h2{
     display: flex;
     flex-direction: row;
     gap: 60px;
+    transition: transform 400ms;
 }
 
 .scroller-img{
@@ -220,7 +256,7 @@ h2{
     border-radius: 16px;
     font-family: 'Red Hat Text';
     font-size: 40px;
-    color: #fff;
+    color: var(--text-light);
 }
 
 .scroller-img-1 {
@@ -252,26 +288,35 @@ h2{
     border-radius: 50%;
     width: 20px;
     height: 20px;
-    background-color: var(--font-orange);
+    background-color: var(--color-secondary);
     transition: 400ms;
     cursor: pointer;
     opacity: 0.5;
+    user-select: none;
 }
 
 .btn:hover .radio-btn {
     opacity: 1;
 }
 
-#radio1:checked ~ .btn .btn1 {
+#radio1:checked ~ .scroller-inputs .btn .btn1 {
     opacity: 1;
 }
 
-#radio2:checked ~ .btn .btn2 {
+#radio1:checked ~ .scroller-items {
+    transform: translateX(33.33%);
+}
+
+#radio2:checked ~ .scroller-inputs .btn .btn2 {
     opacity: 1;
 }
 
-#radio3:checked ~ .btn .btn3 {
+#radio3:checked ~ .scroller-inputs .btn .btn3 {
     opacity: 1;
+}
+
+#radio3:checked ~ .scroller-items {
+    transform: translateX(-33.33%);
 }
 
 .scroller-btn, .stories-btn{
@@ -281,14 +326,20 @@ h2{
     justify-content: center;
     gap: 10px;
     border: none;
-    color: #fff;
+    color: var(--text-light);
     font-family: 'Red Hat Text';
     font-size: 24px;
     width: 228px;
     height: 59px;
     border-radius: 10px;
     cursor: pointer;
-    background-color: var(--btn-color);
+    background-color: var(--color-primary);
+    user-select: none;
+    transition: 300ms;
+}
+
+.scroller-btn:hover, .stories-btn:hover{
+    background-color: var(--color-accent);
 }
 
 .stories-section{
@@ -304,7 +355,7 @@ h2{
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    color: var(--btn-color);
+    color: var(--color-primary);
 }
 
 .stories-content{
@@ -347,14 +398,14 @@ h3{
 
 .stories-link{
     display: block;
-    color: var(--btn-color);
+    color: var(--color-primary);
     font-weight: bold;
 }
 
 .page-footer{
     display: flex;
     flex-direction: row;
-    color: #fff;
+    color: var(--text-light);
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
@@ -370,6 +421,18 @@ h3{
 
 .footer-first-item{
     width: 176px;
+}
+
+.footer-icon, .footer-youtube-icon path{
+    transition: 300ms
+}
+
+.footer-icon:hover{
+    fill: var(--color-secondary);
+}
+
+.footer-youtube-icon:hover path{
+    stroke: var(--color-secondary);
 }
 
 .footer-text{
