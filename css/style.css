@@ -1,6 +1,7 @@
 :root{
     --color-primary: #0D606F;
     --color-secondary: #F2785C;
+    --color-accent: #00869e;
 
     --text-light: #FFFFFF;
 }
@@ -32,7 +33,7 @@ h2{
 }
 
 .wrapper{
-    max-width: 1440px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -115,7 +116,7 @@ h2{
 }
 
 .header-login-btn:hover{
-    background-color: #00869e;
+    background-color: var(--color-accent);
 }
 
 .plan-trip-section{
