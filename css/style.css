@@ -447,3 +447,11 @@ h3{
         padding-right: 20px;
     }
 }
+
+@media (max-width: 768px){
+    .header-nav-list, .header-logo-text, .header-login-btn,
+    .explore-title, .explore-description, .footer-first-item,
+    .footer-text{
+        display: none;
+    }
+}
