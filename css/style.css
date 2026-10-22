@@ -482,4 +482,28 @@ h3{
         height: 30px;
         font-size: 11px;
     }
+
+    h2{
+        font-size: 14px;
+    }
+
+    .steps-items{
+        width: 100%;
+        padding: 0 15px;
+    }
+
+    .steps-item{
+        width: 70px;
+    }
+
+    .steps-icon{
+        width: 70px;
+        height: 70px;
+        padding: 18px;
+    }
+
+    .steps-description{
+        font-size: 10px;
+        text-align: center;
+    }
 }
