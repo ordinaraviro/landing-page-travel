@@ -506,4 +506,12 @@ h3{
         font-size: 10px;
         text-align: center;
     }
+
+    .scroller-img{
+        width: 360px;
+        height: 210px;
+        padding-top: 8px;
+        background-position: center;
+        background-size: contain;
+    }
 }
