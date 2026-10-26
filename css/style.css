@@ -514,4 +514,16 @@ h3{
         background-position: center;
         background-size: contain;
     }
+
+    .scroller-img-1 {
+        background-image: url(../assets/image/img-1-scroll-mob.jpg);
+    }
+
+    .scroller-img-2 {
+        background-image: url(../assets/image/img-2-scroll-mob.jpg);
+    }
+
+    .scroller-img-3 {
+        background-image: url(../assets/image/img-3-scroll-mob.jpg);
+    }
 }
