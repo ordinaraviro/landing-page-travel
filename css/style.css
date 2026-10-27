@@ -507,12 +507,18 @@ h3{
         text-align: center;
     }
 
+    .scroller-items{
+        gap: 15px;
+        padding: 0 7px;
+    }
+
     .scroller-img{
         width: 360px;
         height: 210px;
         padding-top: 8px;
         background-position: center;
         background-size: contain;
+        font-size: 20px;
     }
 
     .scroller-img-1 {
@@ -525,5 +531,18 @@ h3{
 
     .scroller-img-3 {
         background-image: url(../assets/image/img-3-scroll-mob.jpg);
+    }
+
+    .stories-img{
+        width: 155px;
+        height: 130px;
+    }
+
+    h3{
+        font-size: 11px;
+    }
+
+    .stories-item-description{
+        font-size: 9px;
     }
 }
