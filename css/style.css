@@ -119,6 +119,17 @@ h2{
     background-color: var(--color-accent);
 }
 
+.header-burger{
+    display:none;
+}
+
+.burger-line{
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: var(--text-light);
+}
+
 .plan-trip-section{
     padding-top: 120px;
     height: 765px;
@@ -466,6 +477,12 @@ h3{
     .explore-title, .explore-description, .footer-first-item,
     .footer-text{
         display: none;
+    }
+
+    .header-burger{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
     }
 
     .explore-search{
