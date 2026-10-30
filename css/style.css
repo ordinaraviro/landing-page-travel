@@ -119,6 +119,17 @@ h2{
     background-color: var(--color-accent);
 }
 
+.header-burger{
+    display:none;
+}
+
+.burger-line{
+    display: block;
+    width: 26px;
+    height: 3px;
+    background-color: var(--text-light);
+}
+
 .plan-trip-section{
     padding-top: 120px;
     height: 765px;
@@ -468,6 +479,29 @@ h3{
         display: none;
     }
 
+    .page-header{
+        box-shadow: none;
+    }
+
+    .header-color{
+        background-color: rgba(242, 120, 92, 0);
+    }
+
+    .header-burger{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .plan-trip-section{
+        height: 251px;
+        padding-top: 67px;
+    }
+
+    .plan-trip-content{
+        padding-top: 67px;
+    }
+    
     .explore-search{
         width: 100%;
         height: 48px;
@@ -507,11 +541,42 @@ h3{
         text-align: center;
     }
 
+    .scroller-items{
+        gap: 15px;
+        padding: 0 7px;
+    }
+
     .scroller-img{
         width: 360px;
         height: 210px;
         padding-top: 8px;
         background-position: center;
         background-size: contain;
+        font-size: 20px;
+    }
+
+    .scroller-img-1 {
+        background-image: url(../assets/image/img-1-scroll-mob.jpg);
+    }
+
+    .scroller-img-2 {
+        background-image: url(../assets/image/img-2-scroll-mob.jpg);
+    }
+
+    .scroller-img-3 {
+        background-image: url(../assets/image/img-3-scroll-mob.jpg);
+    }
+
+    .stories-img{
+        width: 155px;
+        height: 130px;
+    }
+
+    h3{
+        font-size: 11px;
+    }
+
+    .stories-item-description{
+        font-size: 9px;
     }
 }
