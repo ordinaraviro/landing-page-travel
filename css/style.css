@@ -521,6 +521,14 @@ h3{
         font-size: 14px;
     }
 
+    .steps-section{
+        padding: 20px 0;
+    }
+
+    .steps-section-content{
+        gap: 20px;
+    }
+
     .steps-items{
         width: 100%;
         padding: 0 15px;
@@ -539,6 +547,10 @@ h3{
     .steps-description{
         font-size: 10px;
         text-align: center;
+    }
+
+    .scroller-section{
+        gap: 20px;
     }
 
     .scroller-items{
@@ -565,6 +577,22 @@ h3{
 
     .scroller-img-3 {
         background-image: url(../assets/image/img-3-scroll-mob.jpg);
+    }
+
+    .scroller-btn, .stories-btn{
+        width: 103px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .scroller-btn-icon{
+        width: 10px;
+        height: 10px;
+    }
+
+    .stories-section{
+        padding-top: 20px;
+        gap: 10px;
     }
 
     .stories-img{
