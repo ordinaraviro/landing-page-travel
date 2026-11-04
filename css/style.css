@@ -452,6 +452,12 @@ h3{
     font-size: 16px;
 }
 
+.footer-anchor{
+    display: flex;
+    text-decoration: none;
+    max-height: 31px;
+}
+
 @media (max-width: 1200px){
     .wrapper{
         max-width: 100%;
@@ -616,5 +622,13 @@ h3{
 
     .stories-item-description{
         font-size: 9px;
+    }
+
+    .page-footer{
+        justify-content: center;
+    }
+
+    .footer-nav-list{
+        padding: 0;
     }
 }
