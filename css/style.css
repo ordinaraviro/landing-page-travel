@@ -624,6 +624,13 @@ h3{
         font-size: 9px;
     }
 
+    .stories-item-text{
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
     .page-footer{
         justify-content: center;
     }
