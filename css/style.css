@@ -130,6 +130,36 @@ h2{
     background-color: var(--text-light);
 }
 
+.burger-menu{
+    display: none;
+    margin-top: 200px;
+    position: absolute;
+    background-color: var(--color-secondary);
+}
+
+.burger-menu-list{
+    list-style: none;
+    padding: 15px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.burger-menu-anchor{
+    display: block;
+    text-decoration: none;
+    color: var(--text-light);
+    font-family: 'Red Hat Text';
+    font-size: 16px;
+    padding-left: 32px;
+}
+
+.burger-close-btn{
+    align-self: flex-start;
+}
+
 .plan-trip-section{
     padding-top: 120px;
     height: 765px;
@@ -627,6 +657,7 @@ h3{
     .stories-item-text{
         display: -webkit-box;
         -webkit-line-clamp: 9;
+        line-clamp: 9;
         -webkit-box-orient: vertical;
         overflow: hidden;
     }
