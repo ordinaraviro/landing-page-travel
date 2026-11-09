@@ -130,6 +130,36 @@ h2{
     background-color: var(--text-light);
 }
 
+.burger-menu{
+    display: none;
+    margin-top: 200px;
+    position: absolute;
+    background-color: var(--color-secondary);
+}
+
+.burger-menu-list{
+    list-style: none;
+    padding: 15px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+.burger-menu-anchor{
+    display: block;
+    text-decoration: none;
+    color: var(--text-light);
+    font-family: 'Red Hat Text';
+    font-size: 16px;
+    padding-left: 32px;
+}
+
+.burger-close-btn{
+    align-self: flex-start;
+}
+
 .plan-trip-section{
     padding-top: 120px;
     height: 765px;
@@ -452,6 +482,12 @@ h3{
     font-size: 16px;
 }
 
+.footer-anchor{
+    display: flex;
+    text-decoration: none;
+    max-height: 31px;
+}
+
 @media (max-width: 1200px){
     .wrapper{
         max-width: 100%;
@@ -521,6 +557,14 @@ h3{
         font-size: 14px;
     }
 
+    .steps-section{
+        padding: 20px 0;
+    }
+
+    .steps-section-content{
+        gap: 20px;
+    }
+
     .steps-items{
         width: 100%;
         padding: 0 15px;
@@ -539,6 +583,10 @@ h3{
     .steps-description{
         font-size: 10px;
         text-align: center;
+    }
+
+    .scroller-section{
+        gap: 20px;
     }
 
     .scroller-items{
@@ -567,9 +615,35 @@ h3{
         background-image: url(../assets/image/img-3-scroll-mob.jpg);
     }
 
+    .scroller-btn, .stories-btn{
+        width: 103px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .scroller-btn-icon{
+        width: 10px;
+        height: 10px;
+    }
+
+    .stories-section{
+        padding-top: 20px;
+        gap: 10px;
+    }
+
+    .stories-content{
+        padding: 10px 15px;
+        gap: 15px;
+    }
+
+    .stories-item, .stories-item-content{
+        gap: 10px;
+    }
+
     .stories-img{
         width: 155px;
         height: 130px;
+        box-shadow: 0px 4px 4px rgba(13, 96, 111, 1);
     }
 
     h3{
@@ -578,5 +652,21 @@ h3{
 
     .stories-item-description{
         font-size: 9px;
+    }
+
+    .stories-item-text{
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .page-footer{
+        justify-content: center;
+    }
+
+    .footer-nav-list{
+        padding: 0;
     }
 }
