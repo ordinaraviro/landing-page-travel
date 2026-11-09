@@ -131,7 +131,6 @@ h2{
 }
 
 .burger-menu{
-    display: none;
     margin-top: 200px;
     position: absolute;
     background-color: var(--color-secondary);
@@ -486,6 +485,10 @@ h3{
     display: flex;
     text-decoration: none;
     max-height: 31px;
+}
+
+.hide{
+    display: none;
 }
 
 @media (max-width: 1200px){
