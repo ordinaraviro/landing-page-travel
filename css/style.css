@@ -26,6 +26,11 @@
     src: url(../assets/fonts/Aleo/Aleo-Regular.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+    font-family: 'Aleo';
+}
+
 h2{
     font-family: 'Red Hat Text';
     font-size: 40px;
@@ -504,11 +509,14 @@ h3{
     .header-nav-last-item{
         display: none;
     }
+
+    .explore-search{
+        width: 100%;
+    }
 }
 
 @media (max-width: 768px){
-    .header-nav-list, .header-logo-text, .header-login-btn,
-    .explore-title, .explore-description, .footer-first-item,
+    .header-nav-list, .header-logo-text, .header-login-btn, .explore-description, .footer-first-item,
     .footer-text{
         display: none;
     }
@@ -527,12 +535,39 @@ h3{
         gap: 4px;
     }
 
+    .plan-trip-section{
+        padding-bottom: 10px;
+        padding-top: 10px;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px){
+    .explore-title{
+        font-size: 60px;
+    }
+
     .explore-search{
         width: 100%;
+        height: 48px;
+        padding: 9px;
+    }
+
+    .explore-input-text{
+        font-size: 14px;
+    }
+
+    .page-btn{
+        height: 30px;
+        font-size: 11px;
     }
 }
 
 @media (max-width: 390px){
+    .explore-title{
+        display: none;
+    }
+
     .plan-trip-section{
         height: 251px;
         padding-top: 67px;
