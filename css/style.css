@@ -568,6 +568,14 @@ h3{
     .stories-img{
         max-width: 50vw;
     }
+    
+    .page-footer{
+        justify-content: center;
+    }
+
+    .footer-nav-list{
+        padding: 0;
+    }
 }
 
 @media (max-width: 640px){
@@ -711,13 +719,5 @@ h3{
 
     .scroller-img-3 {
         background-image: url(../assets/image/img-3-scroll-mob.jpg);
-    }
-
-    .page-footer{
-        justify-content: center;
-    }
-
-    .footer-nav-list{
-        padding: 0;
     }
 }
