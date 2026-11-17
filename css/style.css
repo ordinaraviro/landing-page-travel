@@ -26,6 +26,11 @@
     src: url(../assets/fonts/Aleo/Aleo-Regular.ttf);
 }
 
+html{
+    scroll-behavior: smooth;
+    font-family: 'Aleo';
+}
+
 h2{
     font-family: 'Red Hat Text';
     font-size: 40px;
@@ -69,6 +74,7 @@ h2{
 }
 
 .header-nav-list{
+    padding: 0;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -131,7 +137,6 @@ h2{
 }
 
 .burger-menu{
-    display: none;
     margin-top: 200px;
     position: absolute;
     background-color: var(--color-secondary);
@@ -270,9 +275,9 @@ h2{
 }
 
 .steps-description{
-    font-family: 'Aleo';
     font-size: 20px;
     color: var(--color-primary);
+    text-align: center;
 }
 
 .scroller-section{
@@ -410,7 +415,6 @@ h2{
 }
 
 h3{
-    font-family: 'Aleo';
     font-size: 35px;
 }
 
@@ -418,6 +422,7 @@ h3{
     display: flex;
     flex-direction: row;
     max-width: 1440px;
+    padding: 0 10px;
     margin-left: auto;
     margin-right: auto;
     gap: 40px;
@@ -425,6 +430,7 @@ h3{
 
 .stories-img{
     border-radius: 16px;
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 1);
 }
 
 .stories-item-content{
@@ -434,8 +440,15 @@ h3{
 }
 
 .stories-item-description{
-    font-family: 'Aleo';
     font-size: 20px;
+}
+
+.stories-item-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .stories-link{
@@ -488,18 +501,36 @@ h3{
     max-height: 31px;
 }
 
+.hide{
+    display: none;
+}
+
 @media (max-width: 1200px){
+    h3{
+        font-size: 28px;
+    }
+
+    .stories-item-description{
+        font-size: 16px;
+    }
+
     .wrapper{
         max-width: 100%;
         padding-left: 15px;
         padding-right: 15px;
     }
+
+    .steps-items{
+        gap: 30px;
+    }
+
+    .steps-item{
+        width: 25vw;
+    }
 }
 
-@media (max-width: 768px){
-    .header-nav-list, .header-logo-text, .header-login-btn,
-    .explore-title, .explore-description, .footer-first-item,
-    .footer-text{
+@media (max-width: 928px){
+    .header-nav-last-item{
         display: none;
     }
 
@@ -508,9 +539,8 @@ h3{
     }
 }
 
-@media (max-width: 390px){
-    .header-nav-list, .header-logo-text, .header-login-btn,
-    .explore-title, .explore-description, .footer-first-item,
+@media (max-width: 768px){
+    .header-nav-list, .header-logo-text, .header-login-btn, .explore-description, .footer-first-item,
     .footer-text{
         display: none;
     }
@@ -530,14 +560,29 @@ h3{
     }
 
     .plan-trip-section{
-        height: 251px;
-        padding-top: 67px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        height: auto;
     }
 
-    .plan-trip-content{
-        padding-top: 67px;
+    .stories-img{
+        max-width: 50vw;
     }
     
+    .page-footer{
+        justify-content: center;
+    }
+
+    .footer-nav-list{
+        padding: 0;
+    }
+}
+
+@media (max-width: 640px){
+    .explore-title{
+        font-size: 60px;
+    }
+
     .explore-search{
         width: 100%;
         height: 48px;
@@ -552,11 +597,11 @@ h3{
         height: 30px;
         font-size: 11px;
     }
-
+    
     h2{
         font-size: 14px;
     }
-
+    
     .steps-section{
         padding: 20px 0;
     }
@@ -583,6 +628,67 @@ h3{
     .steps-description{
         font-size: 10px;
         text-align: center;
+    }
+    
+    .stories-section{
+        padding-top: 20px;
+        gap: 10px;
+    }
+
+    .stories-content{
+        padding: 10px 15px;
+        gap: 15px;
+    }
+
+    .stories-item, .stories-item-content{
+        gap: 10px;
+    }
+
+    .stories-img{
+        width: 155px;
+        height: 130px;
+    }
+
+    h3{
+        font-size: 11px;
+    }
+
+    .stories-item-description{
+        font-size: 9px;
+    }
+
+    .stories-item-text{
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+    
+    .scroller-btn, .stories-btn{
+        width: 103px;
+        height: 30px;
+        font-size: 11px;
+    }
+
+    .scroller-btn-icon{
+        width: 10px;
+        height: 10px;
+    }
+}
+
+@media (max-width: 390px){
+    .explore-title{
+        display: none;
+    }
+
+    .plan-trip-section{
+        height: 251px;
+        padding-top: 67px;
+    }
+
+    .plan-trip-content{
+        padding-top: 67px;
     }
 
     .scroller-section{
@@ -613,60 +719,5 @@ h3{
 
     .scroller-img-3 {
         background-image: url(../assets/image/img-3-scroll-mob.jpg);
-    }
-
-    .scroller-btn, .stories-btn{
-        width: 103px;
-        height: 30px;
-        font-size: 11px;
-    }
-
-    .scroller-btn-icon{
-        width: 10px;
-        height: 10px;
-    }
-
-    .stories-section{
-        padding-top: 20px;
-        gap: 10px;
-    }
-
-    .stories-content{
-        padding: 10px 15px;
-        gap: 15px;
-    }
-
-    .stories-item, .stories-item-content{
-        gap: 10px;
-    }
-
-    .stories-img{
-        width: 155px;
-        height: 130px;
-        box-shadow: 0px 4px 4px rgba(13, 96, 111, 1);
-    }
-
-    h3{
-        font-size: 11px;
-    }
-
-    .stories-item-description{
-        font-size: 9px;
-    }
-
-    .stories-item-text{
-        display: -webkit-box;
-        -webkit-line-clamp: 9;
-        line-clamp: 9;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    .page-footer{
-        justify-content: center;
-    }
-
-    .footer-nav-list{
-        padding: 0;
     }
 }
