@@ -302,13 +302,14 @@ h2{
 
 .scroller-btns{
     position: absolute;
-    height: 80%;
-    display: flex;
+    height: 100%;
+    display: none;
     flex-direction: column;
     justify-content: flex-end;
     gap: 70px;
     align-items: center;
     inset: 0;
+    padding-bottom: 1px;
 }
 
 .scroller-arrows{
@@ -316,6 +317,16 @@ h2{
     flex-direction: row;
     justify-content: space-between;
     gap: 290px;
+}
+
+.scroller-arrow{
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.scroller-radio-btns{
+    display: flex;
+    gap: 6px;
 }
 
 .scroller-items{
@@ -387,6 +398,14 @@ h2{
     opacity: 1;
 }
 
+#radio1:checked ~ .scroller-btns .scroller-radio-btns .btn .btn1 {
+    opacity: 1;
+}
+
+#radio1:checked ~ .scroller-btns .scroller-arrows .scroller-arrow-left {
+    opacity: 0.5;
+}
+
 #radio1:checked ~ .scroller-items {
     transform: translateX(33.33%);
 }
@@ -395,8 +414,20 @@ h2{
     opacity: 1;
 }
 
+#radio2:checked ~ .scroller-btns .scroller-radio-btns .btn .btn2 {
+    opacity: 1;
+}
+
 #radio3:checked ~ .scroller-inputs .btn .btn3 {
     opacity: 1;
+}
+
+#radio3:checked ~ .scroller-btns .scroller-radio-btns .btn .btn3 {
+    opacity: 1;
+}
+
+#radio3:checked ~ .scroller-btns .scroller-arrows .scroller-arrow-right {
+    opacity: 0.5;
 }
 
 #radio3:checked ~ .scroller-items {
@@ -756,5 +787,13 @@ h3{
 
     .scroller-img-3 {
         background-image: url(../assets/image/img-3-scroll-mob.jpg);
+    }
+
+    .scroller-inputs{
+        display: none;
+    }
+
+    .scroller-btns{
+        display: flex;
     }
 }
