@@ -130,11 +130,16 @@ h2{
     cursor: pointer;
 }
 
+.header-burger:hover .burger-line{
+    background-color: var(--color-accent);
+}
+
 .burger-line{
     display: block;
     width: 26px;
     height: 3px;
     background-color: var(--text-light);
+    transition: 300ms;
 }
 
 .burger-menu{
@@ -144,6 +149,7 @@ h2{
     top: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
 }
 
 .burger-menu-list{
@@ -171,6 +177,7 @@ h2{
 
 .burger-close-btn{
     align-self: flex-start;
+    cursor: pointer;
 }
 
 .plan-trip-section{
