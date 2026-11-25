@@ -127,6 +127,11 @@ h2{
 
 .header-burger{
     display:none;
+    cursor: pointer;
+}
+
+.header-burger:hover .burger-line{
+    background-color: var(--color-accent);
 }
 
 .burger-line{
@@ -134,12 +139,17 @@ h2{
     width: 26px;
     height: 3px;
     background-color: var(--text-light);
+    transition: 300ms;
 }
 
 .burger-menu{
-    margin-top: 200px;
     position: absolute;
-    background-color: var(--color-secondary);
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
 }
 
 .burger-menu-list{
@@ -149,7 +159,11 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    width: 195px;
+    margin-left: auto;
     gap: 10px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
 }
 
 .burger-menu-anchor{
@@ -163,6 +177,7 @@ h2{
 
 .burger-close-btn{
     align-self: flex-start;
+    cursor: pointer;
 }
 
 .plan-trip-section{
@@ -280,12 +295,45 @@ h2{
     text-align: center;
 }
 
+.scroller{
+    position: relative;
+}
+
 .scroller-section{
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow: hidden;
     gap: 46px;
+}
+
+.scroller-btns{
+    position: absolute;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 70px;
+    align-items: center;
+    inset: 0;
+    padding-bottom: 1px;
+}
+
+.scroller-arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 290px;
+}
+
+.scroller-arrow{
+    cursor: pointer;
+    transition: 300ms;
+}
+
+.scroller-radio-btns{
+    display: flex;
+    gap: 6px;
 }
 
 .scroller-items{
@@ -304,6 +352,7 @@ h2{
     font-family: 'Red Hat Text';
     font-size: 40px;
     color: var(--text-light);
+    background-repeat: no-repeat;
 }
 
 .scroller-img-1 {
@@ -342,12 +391,26 @@ h2{
     user-select: none;
 }
 
+.small-radio{
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+}
+
 .btn:hover .radio-btn {
     opacity: 1;
 }
 
 #radio1:checked ~ .scroller-inputs .btn .btn1 {
     opacity: 1;
+}
+
+#radio1:checked ~ .scroller-btns .scroller-radio-btns .btn .btn1 {
+    opacity: 1;
+}
+
+#radio1:checked ~ .scroller-btns .scroller-arrows .scroller-arrow-left {
+    opacity: 0.5;
 }
 
 #radio1:checked ~ .scroller-items {
@@ -358,8 +421,20 @@ h2{
     opacity: 1;
 }
 
+#radio2:checked ~ .scroller-btns .scroller-radio-btns .btn .btn2 {
+    opacity: 1;
+}
+
 #radio3:checked ~ .scroller-inputs .btn .btn3 {
     opacity: 1;
+}
+
+#radio3:checked ~ .scroller-btns .scroller-radio-btns .btn .btn3 {
+    opacity: 1;
+}
+
+#radio3:checked ~ .scroller-btns .scroller-arrows .scroller-arrow-right {
+    opacity: 0.5;
 }
 
 #radio3:checked ~ .scroller-items {
@@ -719,5 +794,13 @@ h3{
 
     .scroller-img-3 {
         background-image: url(../assets/image/img-3-scroll-mob.jpg);
+    }
+
+    .scroller-inputs{
+        display: none;
+    }
+
+    .scroller-btns{
+        display: flex;
     }
 }
